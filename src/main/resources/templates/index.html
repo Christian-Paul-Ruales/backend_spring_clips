@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Tengo Hambre</title>
+<!-- Libreria Bootstrap CSS -->
+<link href="./../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}">
+</head>
+<body>
+<div>
+	<div class="container" >
+		<form role="form" th:accion="@{/greeting}" method="get">
+			<label> Que comida desea acompanar con vino?</label>
+			<div class="btn-group btn-group-toggle" data-toggle="buttons">
+				  <label class="btn btn-secondary">
+				    <input type="radio" name="options" id="option1" autocomplete="off" value="Carne-roja" th:value="carne-roja" > Carne roja
+				  </label>
+				  <label class="btn btn-secondary">
+				    <input type="radio" name="options" id="option2" autocomplete="off" value="Pescado" th:value="pescado"> Pescado
+				  </label>
+				  <label class="btn btn-secondary">
+				    <input type="radio" name="options" id="option3" autocomplete="off" value="Mariscos" th:value="mariscos"> Mariscos
+				  </label>
+				  <label class="btn btn-secondary">
+				    <input type="radio" name="options" id="option4" autocomplete="off" value="Carne-blanca" th:value="carne-blanca"> Carne blanca
+				  </label>
+				  <br/>
+				  <input class="btn btn-outline-danger" type="submit" name="Recomendar"/>
+			 </div>
+		  </form>
+		  
+		</div>
+	</div>
+
+</body>
+</html>
