@@ -14,12 +14,12 @@
     =>
 	(if (eq ?principal proteinas)
 		then
-			(assert (plato-recomendado6 (cuy 50)))
+			(assert (plato-recomendado6 (cuy 50) (encebollado 35) (ceviche 25) (hornado 12)))
 			)
 	
 		
 	(if (eq ?principal no)
 		then
-			(assert (plato-recomendado6 (cuy 0)))
+			(assert (plato-recomendado6 (cuy 0) (encebollado 0) (ceviche 0) (hornado 0)))
 			)
 )

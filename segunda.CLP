@@ -14,27 +14,21 @@
     =>
 	(if (eq ?principal cevolla_curtida)
 		then
-			(and (assert (plato-recomendado2 (ceviche 50)))
-			(assert (plato-recomendado2 (encebollado 30)))
-			)
-			
-			
+			 (assert (plato-recomendado2 (ceviche 30) (encebollado 20) (hornado 20)))
+		
 			)
 	(if (eq ?principal cevolla_picante)
 		then
-			(assert (plato-recomendado2 (encebollado 50)))
-			(assert (plato-recomendado2 (ceviche 50)))
+			(assert (plato-recomendado2 (encebollado 30) (ceviche 30) (hornado 10)))
 		
 			)
 	(if (eq ?principal cevolla)
 		then
-			(assert (plato-recomendado2 (encebollado 50)))
-			(assert (plato-recomendado2 (ceviche 50)))
+			(assert (plato-recomendado2 (encebollado 30) (ceviche 30) (hornado 15)))
 			)
 	(if (eq ?principal no)
 		then
-			(assert (plato-recomendado2 (encebollado 0)))
-			(assert (plato-recomendado2 (ceviche 0)))
+			(assert (plato-recomendado2 (encebollado 0) (ceviche 0) (hornado 0)))
 			)
 	
     

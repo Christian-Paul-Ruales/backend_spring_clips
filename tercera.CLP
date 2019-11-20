@@ -14,7 +14,7 @@
     =>
 	(if (eq ?principal curtido_dulce)
 		then
-			(assert (plato-recomendado3 (hornado 50)))
+			(assert (plato-recomendado3 (hornado 30)))
 			)
 			
 			
